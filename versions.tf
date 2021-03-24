@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Taito United
+ * Copyright 2021 Taito United
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,10 +15,11 @@
  */
 
 terraform {
-  required_version = ">= 0.13"
   required_providers {
     digitalocean = {
-      source = "digitalocean/digitalocean"
+      source  = "digitalocean/digitalocean"
+      version = "=2.6.0"
     }
   }
+  required_version = ">= 0.14"
 }
